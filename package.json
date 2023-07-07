@@ -1,5 +1,5 @@
 {
-    "name": "@cydoc/types",
+    "name": "@cydoc-ai/types",
     "version": "0.0.1",
     "description": "Types for Cydoc ecosystem",
     "license": "UNLICENSED",
@@ -8,10 +8,11 @@
     "types": "dist/index.d.ts",
     "repository": "https://github.com/cydoc-ai/types",
     "scripts": {
-        "build": "tsc"
+        "build": "tsc",
+        "deploy": "npm publish"
     },
     "engines": {
-        "node": ">=10"
+        "node": ">=14"
     },
     "dependencies": {},
     "devDependencies": {
