@@ -5,3 +5,6 @@ export {
     Manager,
     ClinicianSignUpData,
 } from './users';
+
+export { Institution } from './intitutions';
+export { GenericObject } from './general';
