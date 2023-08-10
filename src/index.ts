@@ -1,6 +1,6 @@
 export { ApiEditUserBase, DbUser } from './users';
 
-export { Institution } from './intitutions';
+export { Institution } from './institutions';
 export { GenericObject } from './general';
 
 export {
