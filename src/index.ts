@@ -5,7 +5,6 @@ export { GenericObject } from './general';
 
 export {
     UpdateUserResponse,
-    CreateUserResponse,
     GetMembersResponse,
     InviteUserBody,
     CreateUserBody,

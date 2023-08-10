@@ -1,11 +1,6 @@
 import { DbUser } from '.';
 
-export interface UpdateUserResponse {
-    success: true;
-    error?: string;
-}
-
-export interface CreateUserResponse extends ApiResponseBase {
+export interface UpdateUserResponse extends ApiResponseBase {
     user?: DbUser;
 }
 export interface GetMembersResponse extends ApiResponseBase {
@@ -27,7 +22,6 @@ export interface CreateUserBody
         | 'role'
     > {
     institutionName: string;
-    password: string;
 }
 
 export type UpdateUserBody = Pick<
@@ -42,6 +36,6 @@ export interface ApiResponseBase {
 
 export type ApiPostBody = UpdateUserBody | InviteUserBody | CreateUserBody;
 export type ApiResponse =
-    | CreateUserResponse
+    | UpdateUserResponse
     | GetMembersResponse
     | ApiResponseBase;
