@@ -6,10 +6,13 @@ export interface UpdateUserResponse extends ApiResponseBase {
 export interface GetMembersResponse extends ApiResponseBase {
     members?: DbUser[];
 }
-export type InviteUserBody = Pick<
-    DbUser,
-    'email' | 'lastName' | 'role' | 'firstName' | 'institutionId'
->;
+export interface InviteUserBody
+    extends Pick<
+        DbUser,
+        'email' | 'lastName' | 'role' | 'firstName' | 'institutionId'
+    > {
+    isInvite: true;
+}
 
 export interface CreateUserBody
     extends Pick<
@@ -22,6 +25,7 @@ export interface CreateUserBody
         | 'role'
     > {
     institutionName: string;
+    isInvite: false;
 }
 
 export type UpdateUserBody = Pick<
