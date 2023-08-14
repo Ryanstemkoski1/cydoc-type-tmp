@@ -9,7 +9,7 @@ export interface DbUser {
     lastName: string;
     email: string;
     phoneNumber: string;
-    institutionId: string;
+    institutionId: number;
     institutionName: string;
     role: 'manager' | 'clinician';
 }
