@@ -4,12 +4,12 @@ export type ApiEditUserBase = Pick<
 >;
 
 export interface DbUser {
-    id: number;
+    id: string;
     firstName: string;
     lastName: string;
     email: string;
     phoneNumber: string;
-    institutionId: number;
+    institutionId: string;
     institutionName: string;
     role: 'manager' | 'clinician';
 }
