@@ -6,7 +6,7 @@ export { GenericObject } from './general';
 export {
     UpdateUserResponse,
     GetMembersResponse,
-    GetStripeSetupUrl,
+    GetStripeSetupUrlResponse,
     InviteUserBody,
     CreateUserBody,
     UpdateUserBody,
