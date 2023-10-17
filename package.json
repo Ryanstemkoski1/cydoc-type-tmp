@@ -1,6 +1,6 @@
 {
     "name": "@cydoc-ai/types",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Types for Cydoc ecosystem",
     "license": "UNLICENSED",
     "author": "luke@synergetx.io",
@@ -14,7 +14,9 @@
     "engines": {
         "node": ">=14"
     },
-    "dependencies": {},
+    "dependencies": {
+        "stripe": "^14.0.0"
+    },
     "devDependencies": {
         "prettier": "^2.8.x",
         "typescript": "^4.9.5"

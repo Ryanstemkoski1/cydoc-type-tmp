@@ -37,6 +37,9 @@ export type UpdateUserBody = Pick<
 export interface ApiResponseBase {
     errorMessage?: string | undefined;
 }
+export interface GetStripeSetupUrl extends ApiResponseBase {
+    setupUrl: string;
+}
 
 export type ApiPostBody = UpdateUserBody | InviteUserBody | CreateUserBody;
 export type ApiResponse =

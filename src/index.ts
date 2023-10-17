@@ -6,6 +6,7 @@ export { GenericObject } from './general';
 export {
     UpdateUserResponse,
     GetMembersResponse,
+    GetStripeSetupUrl,
     InviteUserBody,
     CreateUserBody,
     UpdateUserBody,
@@ -13,3 +14,5 @@ export {
     ApiPostBody,
     ApiResponse,
 } from './api';
+
+export { SubscriptionInfo } from './subscription';
