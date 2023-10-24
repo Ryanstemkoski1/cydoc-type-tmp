@@ -1,4 +1,4 @@
-export { ApiEditUserBase, DbUser } from './users';
+export { ApiEditUserBase, DbUser, UserRole } from './users';
 
 export { Institution } from './institutions';
 export { GenericObject } from './general';
