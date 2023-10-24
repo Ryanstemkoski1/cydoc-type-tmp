@@ -44,7 +44,11 @@ export interface GetStripeSetupUrlResponse extends ApiResponseBase {
     setupUrl: string;
 }
 
-export type ApiPostBody = UpdateUserBody | InviteUserBody | CreateUserBody;
+export type ApiPostBody =
+    | ManagerUpdateUserBody
+    | UpdateUserBody
+    | InviteUserBody
+    | CreateUserBody;
 export type ApiResponse =
     | UpdateUserResponse
     | GetMembersResponse
