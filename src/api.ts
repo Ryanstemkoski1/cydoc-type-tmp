@@ -33,6 +33,9 @@ export type UpdateUserBody = Pick<
     'email' | 'firstName' | 'lastName' | 'phoneNumber'
 >;
 
+export type ManagerUpdateUserBody = Pick<DbUser, 'id' | 'role'> &
+    UpdateUserBody;
+
 // Generic errored ApiResponseBase includes errorMessage
 export interface ApiResponseBase {
     errorMessage?: string | undefined;
