@@ -1,6 +1,6 @@
 export { ApiEditUserBase, DbUser, UserRole } from './users';
 
-export { Institution } from './institutions';
+export { Institution, InstitutionConfig } from './institutions';
 export { GenericObject } from './general';
 
 export {
