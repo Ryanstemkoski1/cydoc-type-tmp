@@ -1,7 +1,7 @@
 export { ApiEditUserBase, DbUser, UserRole } from './users';
 
 export { Institution, InstitutionConfig } from './institutions';
-export { GenericObject } from './general';
+export { GenericObject, PresignedUrl } from './general';
 
 export {
     UpdateUserResponse,
