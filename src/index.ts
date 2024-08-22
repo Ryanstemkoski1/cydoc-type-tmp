@@ -1,6 +1,6 @@
 export { ApiEditUserBase, DbUser, UserRole } from './users';
 
-export { Institution, InstitutionConfig } from './institutions';
+export { Institution, InstitutionConfig, IntakePinnedForm, IntakeProductSettings } from './institutions';
 export { GenericObject, PresignedUrl } from './general';
 
 export {
@@ -16,3 +16,13 @@ export {
 } from './api';
 
 export { SubscriptionInfo } from './subscription';
+
+export {
+    Appointment,
+    AppointmentTemplate,
+    AppointmentTemplateStep,
+    Note,
+
+} from './appointment';
+
+export { Patient } from './patient';
