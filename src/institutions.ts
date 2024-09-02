@@ -16,7 +16,7 @@ export interface Institution {
 }
 
 export interface InstitutionConfig {
-    id: number;
+    id: string;
     institutionId: string;
     showChiefComplaints: boolean;
     showDefaultForm: boolean;
