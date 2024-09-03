@@ -1,3 +1,5 @@
+import { Patient } from "./patient";
+
 export type Appointment = {
     id: string;
     appointmentDate: string;
@@ -8,6 +10,7 @@ export type Appointment = {
     createdDate: string;
     lastUpdatedDate: string;
     notes?: Note[];
+    patient: Patient;
     template?: AppointmentTemplate;
 };
 
