@@ -1,4 +1,4 @@
-import { DbUser } from '.';
+import { AppointmentTemplateStep, DbUser } from '.';
 
 export interface UpdateUserResponse extends ApiResponseBase {
     user?: DbUser;
@@ -44,11 +44,17 @@ export interface GetStripeSetupUrlResponse extends ApiResponseBase {
     setupUrl: string;
 }
 
+export type AppointmentTemplatePostBody = {
+    templateTitle: string;
+    steps: Partial<AppointmentTemplateStep>[];
+};
+
 export type ApiPostBody =
     | ManagerUpdateUserBody
     | UpdateUserBody
     | InviteUserBody
-    | CreateUserBody;
+    | CreateUserBody
+    | AppointmentTemplatePostBody;
 export type ApiResponse =
     | UpdateUserResponse
     | GetMembersResponse
